@@ -7,12 +7,25 @@
     <title>Document</title>
   </head>
   <body>
+    <h2>Add a new book</h2>
+    <form action="#">
+      <input type="text" name="title" />
+      <input type="text" name="author" />
+      <input type="tel" name="numOfPages" />
+      <select name="state" id="state">
+        <option value="readed">Readed</option>
+        <option value="not readed">Not readed yet</option>
+      </select>
+      <button class="inputBtn" type="button">Add</button>
+    </form>
+    <h2>Library</h2>
     <table class="library">
       <thead>
         <tr>
           <th>Book</th>
           <th>Author</th>
           <th>Number of pages</th>
+          <th>State</th>
           <th>Delete</th>
         </tr>
       </thead>
