@@ -18,7 +18,7 @@ body {
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -30,6 +30,7 @@ form {
   border-radius: 10px;
   padding: 10px;
   margin: 10px auto;
+  box-shadow: 0 0 15px #523730;
 }
 
 input,
@@ -38,30 +39,40 @@ select {
   border: 1px solid var(--color-brown-dark);
   border-radius: 5px;
   margin-bottom: 5px;
+  padding: 2px 2px;
+  background-color: var(--color-brown-dark);
+  color: var(--color-brown-lite);
+}
+
+input:focus {
+  outline: none;
 }
 
 /* table */
 table {
-  margin: 0 5px;
+  width: clamp(200px, 50%, 1000px);
+  margin: 0 auto;
   border: 2px solid var(--color-brown-dark);
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: 10px;
-  width: 99%;
-  border-collapse: collapse;
+  box-shadow: 0 0 15px #523730;
 }
 
 tr {
-  border-bottom: 2px solid #523730;
+  border-bottom: 2px solid var(--color-brown-dark);
 }
 
 th {
   color: var(--color-brown-lite);
-  background-color: #523730;
+  background-color: var(--color-brown-dark);
 }
 
 th,
 td {
   text-align: center;
   padding: 10px;
+  height: 70px;
 }
 
 .thState {
