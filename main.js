@@ -1,6 +1,7 @@
 const myLibrary = [];
 
 addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 323, "not readed");
+addBookToLibrary("Project Hail Mary", "Andy Weir", 496, "readed");
 
 //functions
 
@@ -12,6 +13,10 @@ function Book(title, author, numOfPages, state) {
 }
 
 function addBookToLibrary(title, author, numOfPages, state) {
+  if (title == "" || author == "" || numOfPages == "") {
+    alert("Please fill the full form before adding a new book");
+    return;
+  }
   const book = new Book(title, author, numOfPages, state);
   myLibrary.push(book);
   displayBooks();

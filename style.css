@@ -1,4 +1,83 @@
+:root {
+  --color-brown-lite: #cfbead;
+  --color-brown-medium: #ab8252;
+  --color-brown-dark: #523730;
+  --color-gray: #46586d;
+  --color-vino: #52101d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-brown-medium);
+  color: var(--color-brown-dark);
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* form */
+
+form {
+  width: 180px;
+  border: 2px solid var(--color-brown-dark);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+input,
+select {
+  width: 150px;
+  border: 1px solid var(--color-brown-dark);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* table */
+table {
+  margin: 0 5px;
+  border: 2px solid var(--color-brown-dark);
+  border-radius: 10px;
+  width: 99%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 2px solid #523730;
+}
+
+th {
+  color: var(--color-brown-lite);
+  background-color: #523730;
+}
+
 th,
 td {
+  text-align: center;
   padding: 10px;
+}
+
+.thState {
+  width: 130px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  background-color: var(--color-brown-dark);
+  color: var(--color-brown-lite);
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
 }
