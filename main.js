@@ -1,15 +1,14 @@
 const myLibrary = [];
 
-addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 323, "not readed");
-addBookToLibrary("Project Hail Mary", "Andy Weir", 496, "readed");
-
 //functions
 
-function Book(title, author, numOfPages, state) {
-  this.title = title;
-  this.author = author;
-  this.numOfPages = numOfPages;
-  this.state = state;
+class Book {
+  constructor(title, author, numOfPages, state) {
+    this.title = title;
+    this.author = author;
+    this.numOfPages = numOfPages;
+    this.state = state;
+  }
 }
 
 function addBookToLibrary(title, author, numOfPages, state) {
@@ -89,6 +88,9 @@ inputBtn.addEventListener("click", () => {
 
   addBookToLibrary(inputTitle, inputAuthor, inputnumOfPages, inputState);
 });
+
+addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 323, "not readed");
+addBookToLibrary("Project Hail Mary", "Andy Weir", 496, "readed");
 
 displayBooks();
 // 'Project Hail Mary', 'Andy Weir', 496, 'readed'
